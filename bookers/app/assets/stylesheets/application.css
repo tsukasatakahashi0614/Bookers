@@ -14,11 +14,6 @@
  *= require_self
  */
 
-*{
-  margin:0;
-  padding:0;
-  box-sizing: border-box
-}
 
 h1{
   display:block;
@@ -26,9 +21,13 @@ h1{
 }
 
 body{
+  background-color: #fff;
+  color:#333;
   font-family: verdana, arial, helvetica, sans-serif
   font-size:13px;
-  margin:33px
+  margin:33px;
+  line-height:18px;
+  display: block
 }
 
 p{
@@ -36,3 +35,17 @@ p{
   font-size:13px;
   margin:33px;
 }
+
+th{
+  padding-bottom: 5px;
+  font-size:13px;
+  font-weight:700;
+  line-height:18px;
+  text-align:center;
+  text-indent:0px;
+  vertical-align: middle
+}
+
+div{margin-top:10px;}
+
+
