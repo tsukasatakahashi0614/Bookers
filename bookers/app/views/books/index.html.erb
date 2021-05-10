@@ -22,7 +22,7 @@
     <td><%= book.body %></td>
     <td> <%= link_to "show", "/books/#{book.id}" %></td>
     <td><%= link_to "edit", "/books/#{book.id}/edit" %></td>
-    <td><%= link_to "destroy", "books/#{book.id}", method: :delete %> </td>
+    <td><%= link_to "destroy", "/books/#{book.id}", method: :delete, data:{ confirm: '削除しますか？' } %> </td>
   </tr>
 
 </tbody>
@@ -36,7 +36,7 @@
   <ul>
   <%= @book.errors.full_messages.each do |message| %>
   <% message %>
-  
+
   </ul>
   <% end %>
   <% end %>
