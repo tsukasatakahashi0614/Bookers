@@ -49,3 +49,11 @@ th{
 div{margin-top:10px;}
 
 
+.notice{
+  color: green;
+  
+}
+
+.succes{
+  color: green;
+}

@@ -1,5 +1,7 @@
-<p>
+<p class="notice"><%= flash[:notice] %></p>
+<p class="succes"><%= flash[:succes] %></p>
 
+<p>
   <strong>Title:</strong>
   <%= @book.title %>
 </p>
@@ -8,3 +10,10 @@
   <strong>Body:</strong>
   <%= @book.body %>
 </p>
+<p><%= link_to "Edit", "/books/#{@book.id}/edit" %>
+|
+
+<%= link_to "Back", "/books" %>
+
+</p>
+
